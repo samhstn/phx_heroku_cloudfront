@@ -46,6 +46,8 @@ Resources:
             PathPattern: "favicon.ico"
             ForwardedValues:
               QueryString: false
+              Headers:
+                - Host
             CachedMethods:
               - GET
               - HEAD
@@ -61,6 +63,8 @@ Resources:
             PathPattern: "css/*.css"
             ForwardedValues:
               QueryString: false
+              Headers:
+                - Host
             CachedMethods:
               - GET
               - HEAD
@@ -76,6 +80,8 @@ Resources:
             PathPattern: "js/*.js"
             ForwardedValues:
               QueryString: false
+              Headers:
+                - Host
             CachedMethods:
               - GET
               - HEAD
@@ -91,6 +97,8 @@ Resources:
             PathPattern: "images/*"
             ForwardedValues:
               QueryString: false
+              Headers:
+                - Host
             CachedMethods:
               - GET
               - HEAD
@@ -116,6 +124,8 @@ Resources:
             - DELETE
           ForwardedValues:
             QueryString: true
+            Headers:
+              - Host
             Cookies:
               Forward: all
           Compress: true
