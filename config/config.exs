@@ -10,7 +10,6 @@ use Mix.Config
 # Configures the endpoint
 config :phx_heroku_cloudfront, PhxHerokuCloudfrontWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "5U+fopAXqbltQTXyuOtp3A4V3WIPn5ZNlkQPQ+f8WPoVugebDLNHczhXBHJlNDn1",
   render_errors: [view: PhxHerokuCloudfrontWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: PhxHerokuCloudfront.PubSub, adapter: Phoenix.PubSub.PG2]
 
