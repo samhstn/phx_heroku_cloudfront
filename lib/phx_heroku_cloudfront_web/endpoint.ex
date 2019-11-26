@@ -5,6 +5,8 @@ defmodule PhxHerokuCloudfrontWeb.Endpoint do
     websocket: [timeout: 45_000],
     longpoll: false
 
+  plug PhxHerokuCloudfrontWeb.Plugs.BlockDirectHerokuAccess
+
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phx.digest
